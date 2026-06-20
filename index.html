@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishaq Bangash — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ishaq Bangash, a frontend web developer specializing in React, Tailwind CSS, and WordPress."
+    />
+
+    <!-- Favicon: a simple "</>" mark on a dark tile -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e17'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%237c5cff' text-anchor='middle'%3E%3C/%3E%3C/svg%3E%3Cpath fill='none'/%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- decorative ambient glows -->
+    <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--three" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="nav">
+      <div class="nav-inner container">
+        <a href="#hero" class="logo">&lt;IshaqBangash&nbsp;/&gt;</a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn btn-outline nav-cta">Hire Me</a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <p class="eyebrow">// frontend developer</p>
+            <h1 class="hero-title">
+              Ishaq <span class="grad-text">Bangash</span>
+            </h1>
+            <p class="hero-sub">
+              I design and build clean, responsive interfaces with
+              <strong>React</strong>, <strong>Tailwind&nbsp;CSS</strong>, and an
+              eye for pixel-level detail — turning ideas into fast, accessible
+              experiences on the web.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+
+            <div class="hero-meta">
+              <span class="status-dot" aria-hidden="true"></span>
+              Available for freelance &amp; full-time roles
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="editor">
+              <div class="editor-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="editor-tab">ishaq.js</span>
+              </div>
+              <pre
+                class="editor-body"
+              ><code id="typewriter"></code><span class="cursor"></span></pre>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll down">
+          <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        </a>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div class="about-visual reveal">
+            <div class="avatar-ring">
+              <div class="avatar"><img src="profile.jpeg" alt="" /></div>
+            </div>
+            <span class="badge-float">
+              <span class="status-dot status-dot--sm"></span> Open to work
+            </span>
+          </div>
+
+          <div class="about-text reveal">
+            <p class="eyebrow">// about</p>
+            <h2 class="section-title">A bit about me</h2>
+            <!-- TODO: Replace this paragraph with your real bio -->
+            <p class="about-p">
+              I'm Ishaq, a frontend web developer who enjoys turning rough ideas
+              and Figma files into interfaces that feel quick, clear, and a
+              little bit delightful to use. I care about the details most people
+              scroll past — spacing, motion, load times — because that's where
+              good UI actually lives.
+            </p>
+            <!-- TODO: Replace this paragraph with your real bio -->
+            <p class="about-p">
+              My day-to-day toolkit is React and Tailwind CSS for building
+              products, and WordPress for clients who need something they can
+              manage themselves. I like working close to designers and learning
+              the "why" behind a layout, not just the "how."
+            </p>
+
+            <ul class="about-facts">
+              <li>
+                <span class="fact-glyph">📍</span> Based in Pakistan — open to
+                remote work
+              </li>
+              <li>
+                <span class="fact-glyph">🧩</span> 1+ years building interfaces
+                for the web
+              </li>
+              <li>
+                <span class="fact-glyph">🚀</span> Currently exploring Node.js
+                &amp; backend basics
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="skills" id="skills">
+        <div class="container">
+          <p class="eyebrow eyebrow--center">// skills</p>
+          <h2 class="section-title section-title--center reveal">
+            Tools I build with
+          </h2>
+          <p class="section-sub reveal">
+            The stack I reach for most when shipping interfaces.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="skill-icon skill-icon--react" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <ellipse
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="7.5"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                  />
+                  <ellipse
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="7.5"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    transform="rotate(60 24 24)"
+                  />
+                  <ellipse
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="7.5"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    transform="rotate(120 24 24)"
+                  />
+                  <circle cx="24" cy="24" r="3.6" fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="skill-name">React</h3>
+              <p class="skill-desc">
+                Component-driven UIs, hooks &amp; state management.
+              </p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon skill-icon--html" aria-hidden="true">
+                <span class="glyph">&lt;/&gt;</span>
+              </div>
+              <h3 class="skill-name">HTML5</h3>
+              <p class="skill-desc">
+                Semantic, accessible markup as the foundation.
+              </p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon skill-icon--css" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <rect
+                    x="8"
+                    y="12"
+                    width="28"
+                    height="5"
+                    rx="2.5"
+                    fill="currentColor"
+                  />
+                  <rect
+                    x="8"
+                    y="22"
+                    width="22"
+                    height="5"
+                    rx="2.5"
+                    fill="currentColor"
+                  />
+                  <rect
+                    x="8"
+                    y="32"
+                    width="16"
+                    height="5"
+                    rx="2.5"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="skill-name">CSS3</h3>
+              <p class="skill-desc">
+                Cascading layouts, animation &amp; responsive design.
+              </p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon skill-icon--js" aria-hidden="true">
+                <span class="glyph">JS</span>
+              </div>
+              <h3 class="skill-name">JavaScript</h3>
+              <p class="skill-desc">
+                Interactivity, DOM logic &amp; clean async code.
+              </p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon skill-icon--tailwind" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M8 24c2-7 6-10 12-10 6 0 8 5 14 5 4 0 7-2 9-6-2 7-6 10-12 10-6 0-8-5-14-5-4 0-7 2-9 6Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M8 33c2-7 6-10 12-10 6 0 8 5 14 5 4 0 7-2 9-6-2 7-6 10-12 10-6 0-8-5-14-5-4 0-7 2-9 6Z"
+                    fill="currentColor"
+                    opacity="0.55"
+                  />
+                </svg>
+              </div>
+              <h3 class="skill-name">Tailwind CSS</h3>
+              <p class="skill-desc">
+                Utility-first styling for fast, consistent UI.
+              </p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon skill-icon--wp" aria-hidden="true">
+                <span class="glyph">W</span>
+              </div>
+              <h3 class="skill-name">WordPress</h3>
+              <p class="skill-desc">
+                Custom themes &amp; client-manageable sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <p class="eyebrow eyebrow--center">// projects</p>
+          <h2 class="section-title section-title--center reveal">
+            Selected work
+          </h2>
+          <p class="section-sub reveal">
+            A few projects I've enjoyed building. Replace with your own anytime.
+          </p>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card reveal">
+              <div class="project-thumb" style="--thumb-accent: #7c5cff">
+                <img
+                  src="portfolio.png"
+                  alt="Screenshot of the Portfolio interface"
+                  class="thumb-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-file">Portfolio.tsx</p>
+                <h3 class="project-name">Portfolio</h3>
+                <p class="project-desc">
+                  A storefront UI for an eco-friendly products shop, with cart
+                  state, filters, and a clean checkout flow.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">React</span>
+                  <span class="tag">CSS</span>
+                </div>
+                <div class="project-links">
+                  <!-- TODO: replace # with your real links -->
+                  <a
+                    href="https://github.com/MuhammadIshaq10/React-Portfolio"
+                    target="_blank"
+                    class="icon-link"
+                    aria-label="View Portfolio source code"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="14"
+                        rx="2"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      />
+                      <path
+                        d="M9 16 7 12l2-4M15 8l2 4-2 4"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Code
+                  </a>
+                  <a
+                    href="https://react-portfolio-nine-dusky.vercel.app/"
+                    target="_blank"
+                    class="icon-link"
+                    aria-label="View Portfolio live demo"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M7 17 17 7M9 7h8v8"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal">
+              <div class="project-thumb" style="--thumb-accent: #00e5c7">
+                <img
+                  src="crypto.png"
+                  alt="Screenshot of the Crypto interface"
+                  class="thumb-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-file">crypto.tsx</p>
+                <h3 class="project-name">Crypto Website</h3>
+                <p class="project-desc">
+                  A drag-and-drop kanban board for small teams, with boards,
+                  cards, and saved local state.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Html</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/MuhammadIshaq10/Crypto-Website"
+                    target="_blank"
+                    class="icon-link"
+                    aria-label="View Crypto Website source code"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="3"
+                        y="4"
+                        width="18"
+                        height="14"
+                        rx="2"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      />
+                      <path
+                        d="M9 16 7 12l2-4M15 8l2 4-2 4"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Code
+                  </a>
+                  <a
+                    href="https://crypto-website-gules.vercel.app/"
+                    target="_blank"
+                    class="icon-link"
+                    aria-label="View crypto Website live demo"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M7 17 17 7M9 7h8v8"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <p class="eyebrow eyebrow--center">// testimonials</p>
+          <h2 class="section-title section-title--center reveal">
+            What people say
+          </h2>
+          <p class="section-sub reveal">
+            A few kind words from people I've worked with. Replace with your
+            real ones whenever you have them.
+          </p>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card reveal">
+              <svg
+                class="quote-mark"
+                viewBox="0 0 32 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.5 0C4.3 2.6 1 7.2 1 13c0 5.5 3.3 9.4 8 9.4 3.5 0 6-2.5 6-5.8 0-3-2-5.1-4.8-5.1-.7 0-1.3.1-1.7.3.3-3.4 2.5-6.4 6-8.3L9.5 0Zm17.2 0c-5.2 2.6-8.5 7.2-8.5 13 0 5.5 3.3 9.4 8 9.4 3.5 0 6-2.5 6-5.8 0-3-2-5.1-4.8-5.1-.7 0-1.3.1-1.7.3.3-3.4 2.5-6.4 6-8.3L26.7 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <p class="testimonial-quote">
+                Ishaq turned our half-finished Figma file into a fully
+                responsive site in under two weeks. He caught inconsistencies in
+                our design system that we hadn't even noticed ourselves.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar testimonial-avatar--violet">
+                  SM
+                </div>
+                <div class="testimonial-meta">
+                  <p class="testimonial-name">Sarah Mitchell</p>
+                  <p class="testimonial-role">Product Manager, Northwind Co.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <svg
+                class="quote-mark"
+                viewBox="0 0 32 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.5 0C4.3 2.6 1 7.2 1 13c0 5.5 3.3 9.4 8 9.4 3.5 0 6-2.5 6-5.8 0-3-2-5.1-4.8-5.1-.7 0-1.3.1-1.7.3.3-3.4 2.5-6.4 6-8.3L9.5 0Zm17.2 0c-5.2 2.6-8.5 7.2-8.5 13 0 5.5 3.3 9.4 8 9.4 3.5 0 6-2.5 6-5.8 0-3-2-5.1-4.8-5.1-.7 0-1.3.1-1.7.3.3-3.4 2.5-6.4 6-8.3L26.7 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <p class="testimonial-quote">
+                We needed a WordPress site our own marketing team could update
+                without calling a developer every time. Ishaq built custom
+                blocks that made that possible without ever feeling clunky.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar testimonial-avatar--teal">
+                  DC
+                </div>
+                <div class="testimonial-meta">
+                  <p class="testimonial-name">David Chen</p>
+                  <p class="testimonial-role">Founder, Bazaario</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <svg
+                class="quote-mark"
+                viewBox="0 0 32 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9.5 0C4.3 2.6 1 7.2 1 13c0 5.5 3.3 9.4 8 9.4 3.5 0 6-2.5 6-5.8 0-3-2-5.1-4.8-5.1-.7 0-1.3.1-1.7.3.3-3.4 2.5-6.4 6-8.3L9.5 0Zm17.2 0c-5.2 2.6-8.5 7.2-8.5 13 0 5.5 3.3 9.4 8 9.4 3.5 0 6-2.5 6-5.8 0-3-2-5.1-4.8-5.1-.7 0-1.3.1-1.7.3.3-3.4 2.5-6.4 6-8.3L26.7 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <p class="testimonial-quote">
+                "Pixel-perfect" isn't a phrase I throw around lightly, but
+                Ishaq's build matched our Figma file down to the spacing.
+                Genuinely rare to find on the frontend side.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar testimonial-avatar--pink">
+                  AH
+                </div>
+                <div class="testimonial-meta">
+                  <p class="testimonial-name">Amelia Hughes</p>
+                  <p class="testimonial-role">Lead Designer, Pixel &amp; Co.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-text reveal">
+            <p class="eyebrow">// say hello</p>
+            <h2 class="section-title">Let's build something great</h2>
+            <p class="about-p">
+              Have a project in mind, or just want to talk frontend? My inbox is
+              open — I usually reply within a day.
+            </p>
+
+            <!-- TODO: replace with your real email -->
+            <button
+              class="email-chip"
+              id="emailChip"
+              type="button"
+              data-email="ishaqbangash656@gmail.com"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M4 7l8 6 8-6"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span id="emailText">ishaqbangash656@gmail.com</span>
+              <span class="copy-pill" id="copyPill">Copy</span>
+            </button>
+
+            <div class="social-row">
+              <!-- TODO: replace # with your real profile links -->
+              <a
+                href="https://github.com/MuhammadIshaq10"
+                target="_blank"
+                class="social-btn"
+                aria-label="GitHub"
+              >
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.25c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.36 1.12 2.93.85.09-.66.34-1.12.62-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.92-2.35 4.78-4.58 5.04.35.31.66.92.66 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-ishaq-948ab9380/"
+                target="_blank"
+                class="social-btn"
+                aria-label="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0H13v1.71h.05c.45-.86 1.56-1.77 3.21-1.77 3.43 0 4.06 2.26 4.06 5.2V21h-4v-5.4c0-1.29-.02-2.94-1.8-2.94-1.8 0-2.07 1.41-2.07 2.85V21h-4V9Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me a bit about your project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              Send Message
+            </button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-logo">&lt;IshaqBangash&nbsp;/&gt;</p>
+        <p class="footer-note">© <span id="year"></span> Ishaq Bangash.</p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 19V5M5 12l7-7 7 7"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
